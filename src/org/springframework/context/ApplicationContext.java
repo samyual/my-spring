@@ -9,7 +9,7 @@ import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 
 public class ApplicationContext {
-    private BeanFactory beanFactory = new BeanFactory();
+    private final BeanFactory beanFactory = new BeanFactory();
 
     public ApplicationContext(String basePackage) {
         System.out.println("******Context is under construction******");

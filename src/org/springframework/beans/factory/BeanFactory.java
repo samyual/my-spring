@@ -16,8 +16,8 @@ import java.net.URL;
 import java.util.*;
 
 public class BeanFactory {
-    private Map<String, Object> singletons = new HashMap<>();
-    private List<BeanPostProcessor> postProcessors = new ArrayList<>();
+    private final Map<String, Object> singletons = new HashMap<>();
+    private final List<BeanPostProcessor> postProcessors = new ArrayList<>();
 
     public Object getBean(String beanName) {
         return singletons.get(beanName);
